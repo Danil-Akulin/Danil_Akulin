@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="kalculator_cssEdit.css">
+        <title>Valluta kalkulaator v1.0</title>
+    </head>
+    <body>
+        <h1>Valuuta kalkulaator v1.0</h1>
+        <h4>
+        <input type="button" onclick="history.back();" class="b1" value="Tagasi";/>
+        <br>
+        <br>
+        <br>
+
+        <form name="var1" onclick="return validateForm()" method="past">
+            <label for="kogus">Sisesta kogus:</label>
+            <input type="number" name="kogus" id="kogus"> euro
+            <br>
+            <fieldset>
+
+                <legend> Vali valuuta:</legend>
+
+                <input type="radio" name="valuuta1" id="dollar" value="dollar" onchange="radioChange(event)">
+                <label for="dollar">dollar<label>
+                <br>
+                <input type="radio" name="valuuta1" id="rub" value="rub" onchange="radioChange(event)">
+                <label for="rub">rub</label>
+                <br>
+                <input type="radio" name="valuuta1" id="frank" value="frank" onchange="radioChange(event)">
+                <label for="frank">frank</label>
+                <br>
+                <input type="radio" name="valuuta1" id="kroon" value="kroon" onchange="radioChange(event)">
+                <label for="kroon">kroon</label>
+                <br>
+
+            </fieldset>
+            <div id="vastus">Siia tuleb vastus.</div>
+        </form>
+            <br>
+
+        <img src="img/none.jpg" alt="pilt" id="pilt">
+        <!--ctr + space-->
+        </h4>
+
+        <h2>Valuuta kalkulaator v2.0</h2>
+        <br>
+        <h3>
+        <form name="var2" onsubmit="return validate()">
+            <label for="kogus">Sisesta kogus:</label>
+            <input type="number" name="kogus2" id="kogus2"> euro
+            <br>
+            <select name="valuuta2" onchange="selectOptionChange(event)">
+                <option value=""></option>
+                <option value="dollar">dollar</option>
+                <option value="rub">rub</option>
+                <option value="frank">frank</option>
+                <option value="kroon">kroon</option>
+            </select>
+            <div id="vastus2">Siia tuleb vastus.</div>
+        </form>
+
+
+        <img src="img/none.jpg" alt="pilt" id="pilt2">
+        </h3>
+
+
+        <h5>Valuuta kalkulaator v3.0</h5>
+        <h6>
+        <form name="var3">
+        <label for="kogus3">Sisesta kogus:</label>
+        <input type="number" name="kogus3" id="kogus3"> euro
+        <br>
+        <label for="valuutanimi">Sisesta valuuta(dollar, rub, frank, kroon):</label>
+        <input type="text" name="valuutanimi" id="valuutanimi" placeholder="Valuuta nimetus">
+        <input type="button" onsubmit=" return inputCurrencyText()" value="OK">
+        <input type="vastus3">Siia tuleb vastus...</form>input>
+        <div id="vastus3">Siia tuleb vastus.</div>
+        </h6>
+
+        <h7>Oma kalkulaator</h7>
+        <h8>
+            <form name="var4" onsubmit="return validate()">
+                <label for="kogus4">Sisesta kogus:</label>
+                <input type="number" name="kogus4" id="kogus4"> meetrit
+                <br>
+                <select name="valuuta4" onchange="selectOptionChange(event)">
+                    <option value=""></option>
+                    <option value="kilometer">kilometer</option>
+                    <option value="meter">meter</option>
+                    <option value="centimeter">centimeter</option>
+                </select>
+                <div id="vastus4">Siia tuleb vastus.</div>
+            </form>
+        </h8>
+
+    <footer>
+        <br>
+        <a href="https://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="W3C HTML5 certified"
+                                                                  src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                 alt="Valid CSS!" />
+        </a>
+        <script src="kalkulaator.js"></script>
+    </footer>
+    </body>
+</html>
